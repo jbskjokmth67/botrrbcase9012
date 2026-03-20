@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Railway Recuitment Board, Bhubaneswar | Ministry of Railways, Govt of India</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<link rel="stylesheet" href="style.css" />
+			
+			
+			<!-- UIkit CSS -->
+			<link
+			rel="stylesheet"
+			href="uikit.min.css"/>
+			
+			<link
+			rel="stylesheet"
+			href="font-awesome.min.css"/>
+			
+			<!-- UIkit JS -->
+			<script src="uikit.min.js"></script>
+			<script src="uikit-icons.min.js"></script>
+			
+			<!-- Newly added favicon codes -->
+			<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+			<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+			<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+			<link rel="manifest" href="site.webmanifest">
+			<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+			
+		</head>
+		<body>
+			<header>
+				<div class="top">
+					<div class="uk-container">
+						<div class="uk-grid-collapse" uk-grid>
+							
+							<div class="uk-width-auto@s uk-visible@s uk-flex uk-flex-middle">
+								
+								
+							</div>
+							<div class="uk-width-auto@s uk-margin-auto-left">
+							</div>
+							<div class="uk-width-auto@s middle uk-visible@m">
+							<a uk-tooltip="title:Click to search ; pos: bottom" style="font-size:14px;"i class="fa fa-search"></i></a>
+							<div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0" style="margin-left:10px !important;">
+								<form class="uk-search uk-search-navbar uk-width-1-1" action="search.php?action=searchWord" method="post">
+									<input class="uk-search-input" type="search" name="q" placeholder="Search" autocomplete="off" autofocus>
+								</form>
+							</div>
+						</div>
+						<div class="lq-vl middle uk-visible@m"></div>
+						<div class="uk-width-auto@s uk-visible@s middle">
+							<a href="#main" class="" uk-tooltip=" title:Skip to main content; pos: bottom" uk-scroll><i class="fa fa-share-square" style="transform: rotate(90deg);"></i>&nbsp;Main Content</a>
+						</div>
+						<div class="lq-vl middle uk-visible@s"></div>
+												<div class="uk-width-auto@s uk-visible@s middle">
+							<button id="fontinc"
+							type="button"
+							class="increase inc"
+							uk-tooltip="title:Increase Font Size; pos: bottom"
+							>
+								+
+							</button>
+							<button id="fontreset"
+							type="button"
+							class="resetMe inc"
+							uk-tooltip=" title:Default Font Size; pos: bottom"
+							>
+								A
+							</button>
+							<button id="fontdec"
+							type="button"
+							class="decrease inc"
+							uk-tooltip="title:Decrease Font Size; pos: bottom"
+							>
+								-
+							</button>
+							
+						</div>
+						<div class="lq-vl middle uk-visible@s"></div>
+						<div class="uk-width-auto@s uk-visible@s uk-padding-remove-vertical uk-padding-remove uk-padding-small middle">
+							
+							<button type="button" class="cv" id="" uk-tooltip="title:Contrast View; pos: bottom" onclick="myFunction()"></button>
+							
+						</div>
+						<div class="lq-vl middle uk-visible@s"></div>
+						
+						<div class="uk-width-auto@s middle">
+							<a href="javascript:void(0)" onclick="changeLanguage();" class="lq_cl_btn" uk-tooltip="title:हिंदी भाषा में बदलें ; pos: bottom" style="font-size:14px;font-weight:600;">हिंदी</a>
+							<div class="lq_cl_lbl" style="display:none;font-weight:bold;">बदल रहा</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="uk-container">
+				<div class="logo-header uk-grid-collapse uk-grid" uk-grid>
+					<div class="uk-width-expand@m uk-width-3-4 uk-first-column">
+						<a href="./"><img src="Header_RRB.svg" class="logo" uk-img></a>
+						<a href="./"><img src="Header_RRB_CV.svg" class="logo-light" uk-img></a>
+					</div>
+					<div class="uk-width-auto uk-margin-auto-left">
+						<img src="RRB_Blue.png" class="ologo" uk-img>
+					</div>
+				</div>
+			</div>
+			
+			<div class="">
+				
+				<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+					
+					<nav class="uk-navbar-container">
+						<div class="uk-container  desktop-menu">
+							<div uk-navbar>
+								<ul class="uk-navbar-nav">
+									<li  class=""><a href="index.html">Home</a></li>
+									<li class="">
+										<a href="#">About</a>
+										<div class="uk-navbar-dropdown uk-margin-remove">
+											<div class="uk-container uk-margin-remove-horizontal">
+												<div class="" uk-grid>
+													<div class="uk-width-1-4 ">
+														<h2 class="uk-heading-bullet lq-rrb-menu-heading">About</h2>
+													</div>
+													<div class="uk-width-1-4 ">
+														<ul class="uk-nav uk-navbar-dropdown-nav">
+																																																<li><a href="about.html">About Us</a></li>
+																																																																	<li class="uk-active"><a href="pageOrganisationStructure.html" target="">Organization Structure</a></li>
+																																																																																	<li class="uk-active"><a href="pageVision.html" target="">Vision &amp; Mission</a></li>
+																																																															
+														</ul>
+													</div>
+																											<div class="uk-width-1-4 ">
+															
+														</div>
+																																								<div class="uk-width-1-4 ">
+															<img src="aboutimage.svg" style="height:200px;" uk-img>
+														</div>
+																									</div>
+											</div>
+										</div>
+									</li>
+									<li class="">
+										<a href="#">Notice</a>
+										<div class="uk-navbar-dropdown uk-margin-remove">
+											<div class="uk-container uk-margin-remove-horizontal">
+												<div class="" uk-grid>
+													<div class="uk-width-1-5">
+														<h2 class="uk-heading-bullet lq-rrb-menu-heading">Notice</h2>
+													</div>
+													
+													<div class="uk-width-3-5 ">
+														<ul class="uk-nav uk-navbar-dropdown-nav">
+																															<li>
+																																			<a href="documentexplorer.html?prmt=TVRneE1RPT0='" target="_blank"><strong>CEN 02/2025&nbsp;:&nbsp;</strong>Notice for viewing and downloading questions and responses with option to raise objections against questions and answer keys.(Hindi)</a>
+																																		</li>
+																															<li>
+																																			<a href="documentexplorer.html?prmt=TVRneE1BPT0='" target="_blank"><strong>CEN 02/2025&nbsp;:&nbsp;</strong> Notice for viewing and downloading questions and responses with option to raise objections against questions and answer keys.(English)  </a>
+																																		</li>
+																															<li>
+																																			<a href="documentexplorer.html?prmt=TVRnd09RPT0='" target="_blank"><strong>CEN 01/2025&nbsp;:&nbsp;</strong>Notice for viewing and downloading questions and responses with option to raise objections against questions and answer keys.(Hindi)</a>
+																																		</li>
+																															<li>
+																																			<a href="documentexplorer.html?prmt=TVRnd09BPT0='" target="_blank"><strong>CEN 01/2025&nbsp;:&nbsp;</strong> Notice for viewing and downloading questions and responses with option to raise objections against questions and answer keys.(English) </a>
+																																		</li>
+																													</ul>
+													</div>
+													
+													<div class="uk-width-1-5">
+														<ul class="uk-nav uk-navbar-dropdown-nav">
+															<li class="uk-active"><a href="notice.html">View All Notices</a></li>
+														</ul>
+													</div>
+													
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="">
+										<a href="#">Recruitment</a>
+										<div class="uk-navbar-dropdown uk-margin-remove">
+											<div class="uk-container uk-margin-remove-horizontal">
+												<div class="" uk-grid>
+													<div class="uk-width-1-4 ">
+														<h2 class="uk-heading-bullet lq-rrb-menu-heading">Recruitment</h2>
+													</div>
+													<div class="uk-width-1-4 ">
+														<ul class="uk-nav uk-navbar-dropdown-nav">
+															<li class="uk-active"><a href="notifications.html">Notifications (CEN)</a></li>
+															<li><a href="notice.html">Notices</a></li>
+															<li><a href="results.html">Results & Cutoffs</a></li>
+															<li><a href="panels.html">Panels</a></li>
+															<li><a href="marksdisclosure.html">Public Disclosure of Marks</a></li>
+															<!--<li><a href="apply.php">Apply</a></li>-->
+															<!--<li><a href="callletter.php">Call Letter / Admit Card</a></li>-->
+															<li><a href="scheduledprograms.html">Scheduled Programmes</a></li>
+														</ul>
+													</div>
+													<div class="uk-width-1-4 ">
+														<ul class="uk-nav uk-navbar-dropdown-nav">
+																															<li><a href="cen.php?prmt=TkRRPQ==">CEN&nbsp;09/2025</a></li>
+																															<li><a href="cen.php?prmt=TkRNPQ==">CEN&nbsp;08/2025</a></li>
+																															<li><a href="cen.php?prmt=TkRJPQ==">CEN&nbsp;05/2025</a></li>
+																															<li><a href="cen.php?prmt=TkRFPQ==">CEN&nbsp;07/2025</a></li>
+																															<li><a href="cen.php?prmt=TkRBPQ==">CEN&nbsp;06/2025</a></li>
+																															<li><a href="cen.php?prmt=TXprPQ==">CEN&nbsp;04/2025</a></li>
+																														<li><a href="archives.php">Archives</a></li>
+														</ul>
+													</div>
+													<div class="uk-width-1-4 ">
+														<ul class="uk-nav uk-navbar-dropdown-nav">
+																													</ul>
+																													<img src="aboutimage.svg" style="height:200px;" uk-img>
+																											</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="">
+										<a href="#">Knowledge Center</a>
+										<div class="uk-navbar-dropdown uk-margin-remove">
+											<div class="uk-container uk-margin-remove-horizontal">
+												<div class="" uk-grid>
+													<div class="uk-width-1-4 uk-text-nowrap">
+														<h2 class="uk-heading-bullet lq-rrb-menu-heading">Knowledge Center</h2>
+													</div>
+													<div class="uk-width-1-4 ">
+														<ul class="uk-nav uk-navbar-dropdown-nav">
+																															<li class="uk-active"><a href="kcpageDoccument.html" target="">Document Verification Process</a></li>
+																																															<li class="uk-active"><a href="kcpageRecruit.html" target="">Recruitment Process</a></li>
+																																															<li class="uk-active"><a href="faq.html" target="">FAQ</a></li>
+																																													</ul>
+													</div>
+																											<div class="uk-width-1-4 ">
+															
+														</div>
+																																								<div class="uk-width-1-4 ">
+															<img src="aboutimage.svg" style="height:200px;" uk-img>
+														</div>
+																									</div>
+											</div>
+										</div>
+									</li>
+									<li  class=""><a href="downloads.html">Downloads</a></li>
+									<li  class="uk-active"><a href="tenders.html">Tenders</a></li>
+									<li  class=""><a href="#">RTI</a>
+										<div class="uk-navbar-dropdown uk-margin-remove">
+											<div class="uk-container uk-margin-remove-horizontal">
+												<div class="" uk-grid>
+													<div class="uk-width-1-4 uk-text-nowrap">
+														<h2 class="uk-heading-bullet lq-rrb-menu-heading">Right to Information</h2>
+													</div>
+													<div class="uk-width-1-4">
+														<ul class="uk-nav uk-navbar-dropdown-nav">
+																															<li class="uk-active"><a href="https://rtionline.gov.in/" target="_blank">Apply online</a></li>
+																																															<li class="uk-active"><a href="rtipage.html?no=Tnc9PQ==" target="">Right To Information</a></li>
+																																													</ul>
+													</div>
+																											<div class="uk-width-1-4 ">
+															
+														</div>
+																																								<div class="uk-width-1-4 ">
+															<img src="aboutimage.svg" style="height:200px;" uk-img>
+														</div>
+																									</div>
+											</div>
+										</div>	
+									</li>
+									<li class=""><a href="contact.html">Contact</a></li>
+								</ul>
+								
+							</div>
+						</div>
+						
+						<button class="menu-button" type="button" uk-toggle="target: #offcanvas-nav">
+							<span uk-icon="icon: menu"></span>
+						</button>
+						<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+							<div class="uk-offcanvas-bar">
+								
+								<ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+									<li class=""><a href="index.html">Home</a></li>
+									<li class="uk-parent">
+										<a href="#">About</a>
+										<ul class="uk-nav-sub">
+																																				<li><a href="about.html">About Us</a></li>
+																																																	<li><a href="pageOrganisationStructure.html" target="">Organization Structure</a></li>
+																																																<li><a href="pageVision.html" target="">Vision &amp; Mission</a></li>
+																																	</ul>
+									</li>
+									<li class=""><a href="notice.html">Notices</a></li>
+									<li class="uk-parent">
+										<a href="#">Recruitment</a>
+										<ul class="uk-nav-sub">
+											<li class=""><a href="notifications.html">Notifications (CEN)</a></li>
+											<li><a href="notice.html">Notices</a></li>
+											<li><a href="results.html">Results & Cutoffs</a></li>
+											<li><a href="panels.html">Panels</a></li>
+											<li><a href="marksdisclosure.html">Public Disclosure of Marks</a></li>
+											<!--<li><a href="apply.php">Apply</a></li>
+											<li><a href="callletter.php">Call Letter / Admit Card</a></li>-->
+											<li><a href="scheduledprograms.html">Scheduled Programmes</a></li>
+											<li><a href="archives.php">Archives</a></li>
+																					</ul>
+									</li>
+									
+									<li class="uk-parent">
+										<a href="#">Knowledge Center</a>
+										<ul class="uk-nav-sub">
+																							<li class=""><a href="kcpageDoccument.html" target="">Document Verification Process</a></li>
+																							<li class=""><a href="kcpageRecruit.html" target="">Recruitment Process</a></li>
+																							<li class=""><a href="faq.html" target="">FAQ</a></li>
+																					</ul>
+									</li>
+									<li  class=""><a href="downloads.html">Downloads</a></li>
+									<li  class="uk-active"><a href="tenders.html">Tenders</a></li>
+									<li class="uk-parent">
+										<a href="#">RTI</a>
+										<ul class="uk-nav-sub">
+																							<li class=""><a href="https://rtionline.gov.in/" target="_blank">Apply online</a></li>
+																							<li class=""><a href="rtipage.html?no=Tnc9PQ==" target="">Right To Information</a></li>
+																					</ul>
+									</li>
+									<li><a href="contact.html">Contact Us</a></li>
+									
+								</ul>
+								
+							</div>
+						</div>
+					</nav>
+				</div>
+				
+				
+				
+			</div>
+		</header>
+		
+										<div class="uk-position-relative uk-height-small mid-banner" id="main">
+    <h2 class="uk-position-center">Tenders</h2>
+</div>
+
+<div class="uk-container">
+	
+	<div class="" uk-grid>
+		
+		<div class="uk-width-expand@m">
+			
+			<div class="uk-padding uk-padding-remove-horizontal">
+				
+				<div class="uk-overflow-auto">
+					<table class="uk-table uk-table-small uk-table-hover uk-table-divider lq-rrb-notice-table">
+						<thead>
+							<tr>
+								<th>Ref No</th>
+								<th>Tender Opening Date</th>
+								<th>Details of Tender</th>
+							</tr>
+						</thead>
+						<tbody>
+														<tr><td colspan="3">Currently no data is available for this section. Please check again later.</td></tr>
+											</tbody>
+				</table>
+			</div>
+			
+			<!--<ul class="uk-pagination uk-flex-right uk-margin-medium-top" uk-margin>
+				<li><a href="#"><span uk-pagination-previous></span></a></li>
+				<li><a href="#">1</a></li>
+				<li class="uk-disabled"><span>...</span></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li class="uk-active"><span>7</span></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#"><span uk-pagination-next></span></a></li>
+			</ul>-->
+			
+			
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="uk-padding uk-padding-remove-bottom">
+    <div class="uk-container">
+        <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+            <div class="ftr">
+				<h3>Stay Connected</h3>
+				&nbsp;
+													<a href="https://twitter.com/rrb_bbsr" target="_blank" onclick="return confirm('This link will take you to an external website');"><p class="lq-rrb-social-media"><span class="uk-margin-small-right" uk-icon="icon:twitter; ratio:1;"></span> Twitter</p></a>
+																			</div>
+            <div class="ftr">
+				<h3>Contact</h3>
+                <h4 class="lq-rrb-footer-heading">Railway Recruitment Board, Bhubaneswar</h4>
+				<p><span class="uk-margin-small-right" uk-icon="icon:location; ratio:1.5;"></span> D-79/80, Rail Vihar, Chandrasekharpur, Bhubaneswar, Odisha, PIN -751023</p>
+				<p><span class="uk-margin-small-right" uk-icon="icon:phone; ratio:1;"></span>Contact No.: <br/>0674-2303015</p>
+				<p><span class="uk-margin-small-right" uk-icon="icon:mail; ratio:1;"></span>Email ID: <br/>rrbbbs[dot]od[at]gov[dot]in</p>
+			</div>
+            <div class="ftr">
+				<h3>Important Links</h3>
+                <ul class="link-list">
+                    <li class="uk-hidden@s"><a href="index.html">Home</a></li>
+                    <li><a href="notice.html">Notice</a></li>
+                    <li><a href="notifications.html">Notifications (CEN)</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="rti.php">RTI</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    						<li class="uk-hidden@s"><a href="ftrpage.php?no=TXpFPQ==" target="">Privacy Policy</a></li>
+											<li class="uk-hidden@s"><a href="ftrpage.php?no=TXpJPQ==" target="">Terms &amp; Conditions</a></li>
+					                    <li class="uk-hidden@s"><a href="sitemap.php">Sitemap</a></li>
+                    <li class="uk-hidden@s"><a href="faq.html">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <div class="uk-container uk-margin-top">
+		<div class="uk-flex uk-flex-between uk-margin-small-bottom uk-flex-middle">
+			
+			<div>
+				<div class="center">
+					<p class="vis uk-visible@s">VISITORS :</p>
+					<span>2</span>&nbsp;
+					<span>0</span>&nbsp;
+					<span>4</span>&nbsp;
+					<span>8</span>&nbsp;
+					<span>3</span>&nbsp;
+					<span>9</span>&nbsp;
+					<span>8</span>&nbsp;
+					<span>2</span>
+					<small class="vis uk-visible@s uk-margin-small-left">(Since: 1 January 2022)</small>
+				</div>
+			</div>
+			<div class="uk-visible@s">
+				<p class="vis">LAST UPDATED ON : 19-03-2026</p>
+			</div>
+		</div>
+	</div>
+    
+</footer>
+<div class="end-footer uk-flex uk-flex-center uk-visible@s" >
+	<ul class="ftrlinks">
+		
+		<li><a href="index.html">Home</a></li>
+					<li><a href="ftrpage.php?no=TXpFPQ==" target="">Privacy Policy</a></li>
+					<li><a href="ftrpage.php?no=TXpJPQ==" target="">Terms &amp; Conditions</a></li>
+				<li><a href="sitemap.php">Sitemap</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+	</ul>
+</div>
+<div class="end-footer" >
+    <p class="uk-margin-remove" style="width:100%;text-align:center;">Copyright &copy;  2026,  Railway Recruitment Board, Bhubaneswar</p>
+</div>
+
+<button onclick="topFunction()" id="top" uk-tooltip="title:Go to top; pos: left" class="uk-align-center">
+    <span uk-icon="icon:triangle-up"></span>
+</button>
+
+
+<script>
+	function setCookie(name,value,days) {
+		var expires = "";
+		if (days) {
+			var date = new Date();
+			date.setTime(date.getTime() + (days*24*60*60*1000));
+			expires = "; expires=" + date.toUTCString();
+		}
+		document.cookie = name + "=" + (value || "")  + expires + "; path=/;Secure";
+	}
+	function getCookie(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0;i < ca.length;i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+		}
+		return null;
+	}
+	var color_state=getCookie("color_state");
+	if(color_state=="contrast"){
+		document.body.classList.add("dark-mode");
+	}
+	function myFunction() {
+		var element = document.body;
+		//var cbtn = document.getElementById('contrast');
+		element.classList.toggle("dark-mode");
+		if(color_state=="contrast"){
+			setCookie("color_state","normal");
+		}
+		else{
+			setCookie("color_state","contrast");
+		}
+		//cbtn.classList.toggle("act");
+	}
+</script>
+
+<script>
+	//Get the button
+	var mybutton = document.getElementById("top");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+		if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+			mybutton.style.display = "block";
+			} else {
+			mybutton.style.display = "none";
+		}
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		window.scrollTo({top: 0, behavior: 'smooth'});
+	}
+	
+	function changeLanguage(){
+		//alert("Changing Language");
+		$(".lq_cl_btn").hide();
+		$(".lq_cl_lbl").show();
+		
+		var xmlhttp = new XMLHttpRequest();
+		//UIkit.modal.dialog('<h4><div class=center uk-spinner>Loading. . .&nbsp;&nbsp;&nbsp;</div></h4>');
+		xmlhttp.open("GET", "linqu/languageSwitch.php", true);
+		xmlhttp.send();
+		setTimeout(function () {
+			location.reload(true); // forces a reload from the server
+		}, 600);
+	}
+</script>
+
+<script type="text/javascript" src="jquery-new.min.js"></script>
+<script type="text/javascript" src="text-size.js?v=123"></script>   
+</body>
+</html>
